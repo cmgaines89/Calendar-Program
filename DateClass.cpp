@@ -1,9 +1,6 @@
 /*
-Corinne Gaines
-Date Class: This program prints a calendar of the year of the users choosing, determining if the chosen year is a leap year...ADD MORE
-Corinne Gaines, Jairon Dixon, Jermiah Gathers
-COSC 214
-Fall 2017
+C. Gaines
+Date Class: This program prints a calendar of the year of the users choosing, determining if the chosen year is a leap year
 */
 
 #include <iostream>

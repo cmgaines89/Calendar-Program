@@ -73,7 +73,9 @@ int Dates::firstDayOfMonth(int month, int year)
 	//return wd;
 }
 
+//leap year check
 void Dates::leapYear(int year)
+{
 	curryear = year;
 
 	//check for a leap year - if leap year show message
@@ -145,42 +147,6 @@ void Dates::getYearly(int year)
 
 		cout << endl << setw(35) << "*******************************************************" << endl;
 	}
-}
-
-void Dates::scheduler(int year)
-{
-	char selection;
-	int month;
-	string e1, e2, e3, e4, e5;
-	int count;
-
-		cout << "PLEASE ENTER THE NUMBER OF EVENTS YOU WOULD LIKE TO SCHEDULE: ";
-		cin >> count;
-
-		while (count < 1 || count>5)
-		{
-			cout << "PLEASE ENTER A NUMBER BETWEEN 1 AND 5: ";
-			cin >> count;
-		}
-
-		cout << "PLEASE ENTER THE NUMBER OF THE MONTH THAT YOU WOULD LIKE TO SCHEDULE YOUR EVENT: ";
-		cin >> month;
-
-		while (month < 1 || month > 13)
-		{
-			cout << "PLEASE ENTER A MONTH BETWEEN 1 AND 12: ";
-			cin >> month;
-		}
-
-		cout << "PLEASE ENTER THE NUMBER OF THE MONTH THAT YOU WOULD LIKE TO SCHEDULE YOUR EVENT: ";
-		cin >> month;
-
-		while (month < 1 || month > 13)
-		{
-			cout << "PLEASE ENTER A MONTH BETWEEN 1 AND 12: ";
-			cin >> month;
-		}
-
 }
 
 void Dates::federalholidays(int year)
